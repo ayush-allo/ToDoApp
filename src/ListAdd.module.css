@@ -1,0 +1,86 @@
+.col {
+  position: relative;
+  width: 60%;
+  padding: 0 10px;
+  margin: 30px auto;
+}
+.col .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+}
+.col .inputBox input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #fff;
+}
+.col .inputBox .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.col .inputBox input:focus + .text,
+.col .inputBox input:valid + .text,
+.col .inputBox textarea:focus + .text,
+.col .inputBox textarea:valid + .text {
+  top: -35px;
+  left: 10px;
+}
+.col .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: black;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+.col .inputBox input:focus ~ .line,
+.col .inputBox input:valid ~ .line {
+  height: 100%;
+}
+.accordion-item {
+  margin: 15px 0px;
+  overflow-wrap: break-word;
+  color: white;
+  border-radius: 15px;
+}
+.accordion-header {
+  overflow: hidden;
+  color: white;
+}
+.delete{
+    transform: translate(-0px, -60px);
+    right: 15%;
+    position: absolute;
+    margin-left: 100%;
+    background: none;
+    border: none;
+    color: red;
+}
+.complete{
+    transform: translate(-105px, -60px);
+    left: 25%;
+    position: absolute;
+    margin-right: 100%;
+    background: none;
+    border: none;
+    color: #0bac0b;
+}
